@@ -28,6 +28,13 @@ Prerequisites
    rosdep install --from-paths src --ignore-src -r -y
    colcon build
 
+.. note::
+
+   if ``colcon build`` fails due to missing ``xacro`` or ``zenoh_cpp_vendor``, install them manually via apt before building:
+
+   .. code:: bash
+
+      sudo apt install ros-lyrical-xacro ros-lyrical-zenoh-cpp-vendor
 
 2. Build and flash a demo firmware
 ----------------------------------
